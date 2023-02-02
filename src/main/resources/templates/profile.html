@@ -1,0 +1,38 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Displaying Error Messages with Thymeleaf</title>
+</head>
+<body>
+<div>
+    <div>
+        <h3>Your Booking Details</h3>
+        <table class="booking-detail-table">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Surname</th>
+                <!--th>Booking Amount</th-->
+                <!--th>Check In Date</th-->
+                <!--th>Check Out Date</th-->
+                <th>Phone Number</th>
+            </tr>
+            <tr th:each="Person: ${person}">
+                <td th:text="${person.idNumber}" />
+                <td th:text="${person.name}" />
+                <td th:text="${person.email}" />
+                <td th:text="${person.surname}" />
+                <!--td th:text="${booking.amount}" /-->
+                <!--td th:text="${booking.checkInDate}" /-->
+                <!--td th:text="${booking.checkOutDate}" /-->
+                <td th:text="${user.phoneNumber}" />
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Samantha's Bed No Breafast</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pangolin">
+    <link rel="stylesheet" href="../static/images/css/normalize.css">
+    <link rel="stylesheet" href="../static/images/css/main.css">
+</head>
+<body>
+<!--h1>Standard Bedrooms</h1-->
+<h1><span th:text="${appName}"> Samantha's Bed No Breakfast </span></h1>
+
+<nav>
+    <a id="home" href="/home">Home</a>
+    <a id="rooms" href="/rooms" >Rooms</a>
+    <a id="about" href="/About_us">About Us</a>
+    <a id="book-now" href="/book_now">Book-A-Room</a>
+</nav>
+
+<main>
+    <div layout:fragment="contents">
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="@{layout.html}">
+<head><title>Error Occurred</title></head>
+<body>
+    <main>
+    <div layout:fragments="content">
+        <h1>Oops! Occurred!</h1>
+            <b>[<span th:text="${status}">status</span>]
+                <span th:text="${error}">error</span>
+            </b>
+    </div>
+    </main>
+<p th:text="${message}">message</p>
+</body>
+</html>

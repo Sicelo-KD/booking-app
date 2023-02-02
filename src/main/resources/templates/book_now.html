@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="@{layout.html}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <!--link rel="stylesheet" href="../static/images/css/normalize.css">
+    <link rel="stylesheet" href="../static/images/css/form.css"-->
+</head>
+<body>
+    <h1>Create Profile</h1>
+    <form method="post" action="#" th:action="@{/person}" th:object="${person}" enctype="multipart/form-data" >
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="firstname" th:field="*{name}" name="firstname" value="" autofocus required></label><br>
+
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="lastname" name="lastname" th:field="*{surname}" value="" required></label><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" th:field="*{email}" value="" required></label><br>
+
+        <label for="id_number">ID Number:</label><br>
+        <input type="number" id="id_number" name="id_number" th:field="*{idNumber}" value="" min="13" max="13" required></label><br>
+
+        <label for="phone_number">Phone Number:</label><br>
+        <input type="tel" id="phone_number" name="phone_number" th:field="*{phoneNumber}" value="" required></label><br>
+
+        <label for="photo">upload photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <input type="hidden" id="id" th:field="*{id}">
+
+        <label for="submit" class = "submit">Submit:</label><br>
+        <input type="submit" id="submit" name="submit" value="Create Profile" hover="RGB(69,160,73)"></label><br>
+    </form>
+    <a href="./ts_and_cs.html">Terms and Conditions</a>
+</body>
+</html>

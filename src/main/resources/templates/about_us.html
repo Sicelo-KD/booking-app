@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="@{layout.html}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    aside {
+        width: 30%;
+        padding-left: 15px;
+        margin-left: 15px;
+        float: right;
+        font-style: italic;
+        background-color: lightgray;
+    }
+</style>
+
+<body>
+<main>
+    <div layout:fragment="contents">
+        <aside>
+            <h2>Contact Us</h2>
+            <address>
+                Email : <a href="mailto:webmaster@example.com">Samantha </a>.<br>
+                Visit us at:<br>
+                6127 Bright Avenue<br>
+                Rockville, Soweto<br>
+                Gauteng, South Africa
+            </address>
+            <p></p>
+        </aside>
+        <p>
+            Samantha's Accommodation provides accommodations in Soweto. The property is located 12.4 km from Apartheid Museum, 12.9 km from Gold Reef City & Casino and 13.2 km from Gold Reef City. Parkview Golf Club is 16.1 km away and Johannesburg Stadium is 20.9 km from the guesthouse.
+            At the house, rooms are equipped with a closet, a flat-screen TV, a private bathroom, bed linen and towels. In this accommodation all rooms are equipped with an electric tea pot. The rooms will provide guests with a fridge.
+            Observatory Golf Club is 25.7 km from the accommodation, while Roodepoort Country Club is 25.7 km from the property. The nearest airport is Lanseria International Airport, 40.2 km from Soweto Towers Guest Accommodation.
+            Distance in property description is calculated using © OpenStreetMap
+        </p>
+    </div>
+</main>
+
+</body>
+</html>
